@@ -1,0 +1,614 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<cfdi:Comprobante xmlns:cfdi="http://www.sat.gob.mx/cfd/4" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sat.gob.mx/cfd/4 http://www.sat.gob.mx/sitio_internet/cfd/4/cfdv40.xsd" Version="4.0" Folio="196410" Fecha="2024-02-07T17:13:39" Sello="AGlBCfWtNT3BrK2XE+nj3/XtUhZHiCBSLp57HZcIjqj70gsOUkH+hxwFl9OyM3KXU8otfteSistUPfzwOH9XbeYHuTKtUkSlaIqzWzdX2UbV/qiHENaLPAceQ/nyO4WzMffoF7V9hw+zHIuLOpu2W8ukaUUM2hbyDhZNzYNXhbwBCGWUdMeu8Enn1+Z6Wx135I61xkskaBGt24pT7nR5a5iBjjNpvnY8pVBxuxsdlQuYqoisRk24NWixk+K3hUTo36YVrC32Rr505o6arU+wTqacvCiiQqXYJg5BS9XanArZGuU177BTz6M/w/msXkBzKjdtKfZQ75Y6iHIxHeOx2Q==" FormaPago="99" NoCertificado="00001000000504526371" Certificado="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" CondicionesDePago="Contado VM" SubTotal="36857.44" Moneda="MXN" TipoCambio="1" Total="42754.63" TipoDeComprobante="I" Exportacion="01" MetodoPago="PPD" LugarExpedicion="45019">
+  <cfdi:Emisor Nombre="IMPORTADORA SAYTO" Rfc="ISA691119E20" RegimenFiscal="601" />
+  <cfdi:Receptor UsoCFDI="G01" RegimenFiscalReceptor="612" DomicilioFiscalReceptor="87000" Nombre="ROBERTO RETA RESENDEZ" Rfc="RERR6008226N5" />
+  <cfdi:Conceptos>
+    <cfdi:Concepto ClaveProdServ="25172000" NoIdentificacion="AMCN138" Cantidad="1.000000" ClaveUnidad="XKI" Unidad="jgo" Descripcion="Amortiguador Trasero XT110 RT Negro Mate-Verde (2017) jgo." ValorUnitario="436.346800" Importe="436.346800" ObjetoImp="02">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado TasaOCuota="0.160000" Base="436.346800" Importe="69.815488" Impuesto="002" TipoFactor="Tasa" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+      <cfdi:InformacionAduanera NumeroPedimento="22  16  3879  2007208" />
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="25172000" NoIdentificacion="AMCN149" Cantidad="2.000000" ClaveUnidad="XKI" Unidad="jgo" Descripcion="Barras de Suspensión FT125 Roja Nueva (2018 - 2021) jgo." ValorUnitario="900.302800" Importe="1800.605600" ObjetoImp="02">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado TasaOCuota="0.160000" Base="1800.605600" Importe="288.096896" Impuesto="002" TipoFactor="Tasa" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+      <cfdi:InformacionAduanera NumeroPedimento="23  16  3879  3008453" />
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="25172000" NoIdentificacion="AMCN152" Cantidad="1.000000" ClaveUnidad="XKI" Unidad="jgo" Descripcion="Amortiguador Trasero FT180TS (2019-2021) jgo" ValorUnitario="522.799200" Importe="522.799200" ObjetoImp="02">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado TasaOCuota="0.160000" Base="522.799200" Importe="83.647872" Impuesto="002" TipoFactor="Tasa" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+      <cfdi:InformacionAduanera NumeroPedimento="23  16  3879  3006480" />
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="25172000" NoIdentificacion="AMCN155" Cantidad="1.000000" ClaveUnidad="XKI" Unidad="jgo" Descripcion="Barras de Suspensión Delanteras DM250 (2020 - 2021 - 2022) jgo." ValorUnitario="1314.919200" Importe="1314.919200" ObjetoImp="02">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado TasaOCuota="0.160000" Base="1314.919200" Importe="210.387072" Impuesto="002" TipoFactor="Tasa" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+      <cfdi:InformacionAduanera NumeroPedimento="24  16  3879  4000455" />
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="26101700" NoIdentificacion="ARCN24" Cantidad="3.000000" ClaveUnidad="H87" Unidad="pza" Descripcion="Arbol de Levas 125-Z" ValorUnitario="119.600000" Importe="358.800000" ObjetoImp="02">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado TasaOCuota="0.160000" Base="358.800000" Importe="57.408000" Impuesto="002" TipoFactor="Tasa" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+      <cfdi:InformacionAduanera NumeroPedimento="23  16  3879  3011236" />
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="26101700" NoIdentificacion="ARCN51" Cantidad="2.000000" ClaveUnidad="H87" Unidad="pza" Descripcion="Arbol Secundario de Transmisión 200-Z" ValorUnitario="224.719200" Importe="449.438400" ObjetoImp="02">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado TasaOCuota="0.160000" Base="449.438400" Importe="71.910144" Impuesto="002" TipoFactor="Tasa" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+      <cfdi:InformacionAduanera NumeroPedimento="23  16  3879  3011237" />
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="26101700" NoIdentificacion="ARCN52" Cantidad="2.000000" ClaveUnidad="H87" Unidad="pza" Descripcion="Arbol Primario de Transmisión 200-Z" ValorUnitario="215.905600" Importe="431.811200" ObjetoImp="02">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado TasaOCuota="0.160000" Base="431.811200" Importe="69.089792" Impuesto="002" TipoFactor="Tasa" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+      <cfdi:InformacionAduanera NumeroPedimento="23  16  3879  3011237" />
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="26101700" NoIdentificacion="ARCN55" Cantidad="1.000000" ClaveUnidad="H87" Unidad="pza" Descripcion="Arbol Secundario de Transmisión VORTX 200" ValorUnitario="329.976400" Importe="329.976400" ObjetoImp="02">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado TasaOCuota="0.160000" Base="329.976400" Importe="52.796224" Impuesto="002" TipoFactor="Tasa" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+      <cfdi:InformacionAduanera NumeroPedimento="23  16  3879  3007836" />
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="26101700" NoIdentificacion="ARCN56" Cantidad="1.000000" ClaveUnidad="H87" Unidad="pza" Descripcion="Arbol de Transmision Primario VORTX 200" ValorUnitario="269.771600" Importe="269.771600" ObjetoImp="02">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado TasaOCuota="0.160000" Base="269.771600" Importe="43.163456" Impuesto="002" TipoFactor="Tasa" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+      <cfdi:InformacionAduanera NumeroPedimento="23  16  3879  3007836" />
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="26101700" NoIdentificacion="ARCN57" Cantidad="1.000000" ClaveUnidad="H87" Unidad="pza" Descripcion="Arbol Secundario de Transmision 250-Z 2019 verde" ValorUnitario="329.479600" Importe="329.479600" ObjetoImp="02">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado TasaOCuota="0.160000" Base="329.479600" Importe="52.716736" Impuesto="002" TipoFactor="Tasa" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+      <cfdi:InformacionAduanera NumeroPedimento="23  16  3879  3012196" />
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="26101700" NoIdentificacion="ARCN58" Cantidad="1.000000" ClaveUnidad="H87" Unidad="pza" Descripcion="Arbol Primario de Transmision 250-Z 2019 verde" ValorUnitario="269.817600" Importe="269.817600" ObjetoImp="02">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado TasaOCuota="0.160000" Base="269.817600" Importe="43.170816" Impuesto="002" TipoFactor="Tasa" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+      <cfdi:InformacionAduanera NumeroPedimento="23  16  3879  3012196" />
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="26101700" NoIdentificacion="BLCN25" Cantidad="2.000000" ClaveUnidad="H87" Unidad="pza" Descripcion="Balanceador DM250 (2020 - 2021 - 2022)" ValorUnitario="185.582400" Importe="371.164800" ObjetoImp="02">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado TasaOCuota="0.160000" Base="371.164800" Importe="59.386368" Impuesto="002" TipoFactor="Tasa" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+      <cfdi:InformacionAduanera NumeroPedimento="23  16  3879  3008453" />
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="26101700" NoIdentificacion="BMCN34" Cantidad="4.000000" ClaveUnidad="H87" Unidad="pza" Descripcion="Bomba de Freno Derecha Delantera Vortx 200" ValorUnitario="161.138000" Importe="644.552000" ObjetoImp="02">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado TasaOCuota="0.160000" Base="644.552000" Importe="103.128320" Impuesto="002" TipoFactor="Tasa" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+      <cfdi:InformacionAduanera NumeroPedimento="23  16  3879  3007128" />
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="26121603" NoIdentificacion="CACN99" Cantidad="8.000000" ClaveUnidad="H87" Unidad="pza" Descripcion="Cable de Acelerador AT110 RT" ValorUnitario="21.270400" Importe="170.163200" ObjetoImp="02">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado TasaOCuota="0.160000" Base="170.163200" Importe="27.226112" Impuesto="002" TipoFactor="Tasa" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+      <cfdi:InformacionAduanera NumeroPedimento="24  16  3879  4001323" />
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="26121603" NoIdentificacion="CACN100" Cantidad="8.000000" ClaveUnidad="H87" Unidad="pza" Descripcion="Cable de Acelerador AT110 Sport" ValorUnitario="18.556400" Importe="148.451200" ObjetoImp="02">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado TasaOCuota="0.160000" Base="148.451200" Importe="23.752192" Impuesto="002" TipoFactor="Tasa" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+      <cfdi:InformacionAduanera NumeroPedimento="24  16  3879  4001323" />
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="26121603" NoIdentificacion="CACN216" Cantidad="5.000000" ClaveUnidad="H87" Unidad="pza" Descripcion="Cable de Acelerador ST90" ValorUnitario="29.421600" Importe="147.108000" ObjetoImp="02">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado TasaOCuota="0.160000" Base="147.108000" Importe="23.537280" Impuesto="002" TipoFactor="Tasa" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="26101749" NoIdentificacion="CGCN21" Cantidad="1.000000" ClaveUnidad="H87" Unidad="pza" Descripcion="Cigüeñal FZ16" ValorUnitario="722.540400" Importe="722.540400" ObjetoImp="02">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado TasaOCuota="0.160000" Base="722.540400" Importe="115.606464" Impuesto="002" TipoFactor="Tasa" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+      <cfdi:InformacionAduanera NumeroPedimento="23  16  3879  3012944" />
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="26101749" NoIdentificacion="CGCN26" Cantidad="1.000000" ClaveUnidad="H87" Unidad="pza" Descripcion="Cigueñal DM250 (2020 - 2021 - 2022)" ValorUnitario="833.759200" Importe="833.759200" ObjetoImp="02">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado TasaOCuota="0.160000" Base="833.759200" Importe="133.401472" Impuesto="002" TipoFactor="Tasa" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+      <cfdi:InformacionAduanera NumeroPedimento="23  16  3879  3010353" />
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="25173304" NoIdentificacion="CICN17" Cantidad="3.000000" ClaveUnidad="H87" Unidad="pza" Descripcion="CDI RT200/EX200/250Z" ValorUnitario="67.868400" Importe="203.605200" ObjetoImp="02">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado TasaOCuota="0.160000" Base="203.605200" Importe="32.576832" Impuesto="002" TipoFactor="Tasa" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+      <cfdi:InformacionAduanera NumeroPedimento="23  16  3879  3012944" />
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="26101700" NoIdentificacion="CKCN04" Cantidad="2.000000" ClaveUnidad="H87" Unidad="pza" Descripcion="Carburador AX-100 China" ValorUnitario="264.224000" Importe="528.448000" ObjetoImp="02">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado TasaOCuota="0.160000" Base="528.448000" Importe="84.551680" Impuesto="002" TipoFactor="Tasa" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+      <cfdi:InformacionAduanera NumeroPedimento="23  16  3879  3001255" />
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="26101700" NoIdentificacion="CKCN11" Cantidad="3.000000" ClaveUnidad="H87" Unidad="pza" Descripcion="Carburador DS 150" ValorUnitario="434.442400" Importe="1303.327200" ObjetoImp="02">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado TasaOCuota="0.160000" Base="1303.327200" Importe="208.532352" Impuesto="002" TipoFactor="Tasa" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+      <cfdi:InformacionAduanera NumeroPedimento="23  16  3879  3004294" />
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="26101700" NoIdentificacion="CKCN38" Cantidad="1.000000" ClaveUnidad="H87" Unidad="pza" Descripcion="Carburador 250-Z 2019 verde" ValorUnitario="732.172800" Importe="732.172800" ObjetoImp="02">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado TasaOCuota="0.160000" Base="732.172800" Importe="117.147648" Impuesto="002" TipoFactor="Tasa" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+      <cfdi:InformacionAduanera NumeroPedimento="23  16  3879  3012196" />
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="26101700" NoIdentificacion="CKCN39" Cantidad="1.000000" ClaveUnidad="H87" Unidad="pza" Descripcion="Carburador VORTX 200" ValorUnitario="825.626400" Importe="825.626400" ObjetoImp="02">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado TasaOCuota="0.160000" Base="825.626400" Importe="132.100224" Impuesto="002" TipoFactor="Tasa" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+      <cfdi:InformacionAduanera NumeroPedimento="23  16  3879  3012196" />
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="25172900" NoIdentificacion="CLCN42" Cantidad="2.000000" ClaveUnidad="H87" Unidad="pza" Descripcion="Calavera Completa DM250" ValorUnitario="142.876000" Importe="285.752000" ObjetoImp="02">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado TasaOCuota="0.160000" Base="285.752000" Importe="45.720320" Impuesto="002" TipoFactor="Tasa" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+      <cfdi:InformacionAduanera NumeroPedimento="23  16  3879  3007339" />
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="25172900" NoIdentificacion="CLCN64" Cantidad="1.000000" ClaveUnidad="H87" Unidad="pza" Descripcion="Calavera FT150 GTS Roja" ValorUnitario="190.108800" Importe="190.108800" ObjetoImp="02">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado TasaOCuota="0.160000" Base="190.108800" Importe="30.417408" Impuesto="002" TipoFactor="Tasa" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+      <cfdi:InformacionAduanera NumeroPedimento="23  16  3879  3003376" />
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="25172900" NoIdentificacion="CLCN69" Cantidad="1.000000" ClaveUnidad="H87" Unidad="pza" Descripcion="Calavera FT180TS" ValorUnitario="158.424000" Importe="158.424000" ObjetoImp="02">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado TasaOCuota="0.160000" Base="158.424000" Importe="25.347840" Impuesto="002" TipoFactor="Tasa" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+      <cfdi:InformacionAduanera NumeroPedimento="23  16  3879  3007339" />
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="25172900" NoIdentificacion="CLCN70" Cantidad="2.000000" ClaveUnidad="H87" Unidad="pza" Descripcion="Calavera FT150TS" ValorUnitario="126.739200" Importe="253.478400" ObjetoImp="02">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado TasaOCuota="0.160000" Base="253.478400" Importe="40.556544" Impuesto="002" TipoFactor="Tasa" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+      <cfdi:InformacionAduanera NumeroPedimento="23  16  3879  3010675" />
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="25172900" NoIdentificacion="CLCN72" Cantidad="2.000000" ClaveUnidad="H87" Unidad="pza" Descripcion="Calavera DM150 Roja 2018-2022" ValorUnitario="172.003200" Importe="344.006400" ObjetoImp="02">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado TasaOCuota="0.160000" Base="344.006400" Importe="55.041024" Impuesto="002" TipoFactor="Tasa" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+      <cfdi:InformacionAduanera NumeroPedimento="23  16  3879  3007339" />
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="25172500" NoIdentificacion="CMHN13" Cantidad="20.000000" ClaveUnidad="H87" Unidad="pza" Descripcion="Camara 130/90-16 TR4 Hule Natural YAMAKUMO" ValorUnitario="49.431600" Importe="988.632000" ObjetoImp="02">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado TasaOCuota="0.160000" Base="988.632000" Importe="158.181120" Impuesto="002" TipoFactor="Tasa" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+      <cfdi:InformacionAduanera NumeroPedimento="23  16  3879  3012905" />
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="25172500" NoIdentificacion="CMHN16" Cantidad="40.000000" ClaveUnidad="H87" Unidad="pza" Descripcion="Camara 120/80-18 TR4 Hule Natural YAMAKUMO" ValorUnitario="40.185600" Importe="1607.424000" ObjetoImp="02">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado TasaOCuota="0.160000" Base="1607.424000" Importe="257.187840" Impuesto="002" TipoFactor="Tasa" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+      <cfdi:InformacionAduanera NumeroPedimento="23  16  3879  3011771" />
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="25172500" NoIdentificacion="CMTM20" Cantidad="10.000000" ClaveUnidad="H87" Unidad="pza" Descripcion="Camara 4.50/5.10-17 TR4 Timsun" ValorUnitario="103.325200" Importe="1033.252000" ObjetoImp="02">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado TasaOCuota="0.160000" Base="1033.252000" Importe="165.320320" Impuesto="002" TipoFactor="Tasa" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+      <cfdi:InformacionAduanera NumeroPedimento="23  16  3879  3008903" />
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="41112800" NoIdentificacion="CVCN28" Cantidad="3.000000" ClaveUnidad="H87" Unidad="pza" Descripcion="ARAÑA CUENTA KILOMETROS CROSSMAX PRO 250" ValorUnitario="132.167200" Importe="396.501600" ObjetoImp="02">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado TasaOCuota="0.160000" Base="396.501600" Importe="63.440256" Impuesto="002" TipoFactor="Tasa" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+      <cfdi:InformacionAduanera NumeroPedimento="23  16  3879  3009442" />
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="26101905" NoIdentificacion="CYCN31" Cantidad="2.000000" ClaveUnidad="XKI" Unidad="jgo" Descripcion="Cilindro Completo GN-125" ValorUnitario="421.562400" Importe="843.124800" ObjetoImp="02">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado TasaOCuota="0.160000" Base="843.124800" Importe="134.899968" Impuesto="002" TipoFactor="Tasa" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+      <cfdi:InformacionAduanera NumeroPedimento="23  16  3879  3005264" />
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="26101905" NoIdentificacion="CYCN67" Cantidad="2.000000" ClaveUnidad="XKI" Unidad="jgo" Descripcion="Cilindro Completo Negro 200-Z" ValorUnitario="534.253200" Importe="1068.506400" ObjetoImp="02">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado TasaOCuota="0.160000" Base="1068.506400" Importe="170.961024" Impuesto="002" TipoFactor="Tasa" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+      <cfdi:InformacionAduanera NumeroPedimento="23  16  3879  3010353" />
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="26101905" NoIdentificacion="CYCN71" Cantidad="1.000000" ClaveUnidad="XKI" Unidad="jgo" Descripcion="Cilindro Completo VX-250" ValorUnitario="1980.484000" Importe="1980.484000" ObjetoImp="02">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado TasaOCuota="0.160000" Base="1980.484000" Importe="316.877440" Impuesto="002" TipoFactor="Tasa" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+      <cfdi:InformacionAduanera NumeroPedimento="23  16  3879  3007128" />
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="26101905" NoIdentificacion="CYCN73" Cantidad="2.000000" ClaveUnidad="XKI" Unidad="jgo" Descripcion="Cilindro Completo ATV 180" ValorUnitario="487.489600" Importe="974.979200" ObjetoImp="02">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado TasaOCuota="0.160000" Base="974.979200" Importe="155.996672" Impuesto="002" TipoFactor="Tasa" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+      <cfdi:InformacionAduanera NumeroPedimento="23  16  3879  3010353" />
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="26101905" NoIdentificacion="CYCN108" Cantidad="1.000000" ClaveUnidad="H87" Unidad="pza" Descripcion="Cabeza de Cilindro Completa XEVERUS 250" ValorUnitario="952.807200" Importe="952.807200" ObjetoImp="02">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado TasaOCuota="0.160000" Base="952.807200" Importe="152.449152" Impuesto="002" TipoFactor="Tasa" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+      <cfdi:InformacionAduanera NumeroPedimento="23  16  3879  3012944" />
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="26101905" NoIdentificacion="CYCN109" Cantidad="1.000000" ClaveUnidad="XKI" Unidad="jgo" Descripcion="Cilindro Completo XEVERUS 250 jgo." ValorUnitario="597.043200" Importe="597.043200" ObjetoImp="02">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado TasaOCuota="0.160000" Base="597.043200" Importe="95.526912" Impuesto="002" TipoFactor="Tasa" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+      <cfdi:InformacionAduanera NumeroPedimento="23  16  3879  3006110" />
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="26101905" NoIdentificacion="CYCN119" Cantidad="1.000000" ClaveUnidad="XKI" Unidad="jgo" Descripcion="Cilindro Completo DM250 (2020 - 2021 - 2022)" ValorUnitario="616.492000" Importe="616.492000" ObjetoImp="02">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado TasaOCuota="0.160000" Base="616.492000" Importe="98.638720" Impuesto="002" TipoFactor="Tasa" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+      <cfdi:InformacionAduanera NumeroPedimento="23  16  3879  3006772" />
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="25173800" NoIdentificacion="EJCN32" Cantidad="2.000000" ClaveUnidad="H87" Unidad="pza" Descripcion="Eje del Buzo Impulsor de Valvula Italika 125Z" ValorUnitario="22.089200" Importe="44.178400" ObjetoImp="02">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado TasaOCuota="0.160000" Base="44.178400" Importe="7.068544" Impuesto="002" TipoFactor="Tasa" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="25173800" NoIdentificacion="EJCN73" Cantidad="2.000000" ClaveUnidad="H87" Unidad="pza" Descripcion="Eje de Horquilla Trasera 250Z Verde" ValorUnitario="74.575200" Importe="149.150400" ObjetoImp="02">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado TasaOCuota="0.160000" Base="149.150400" Importe="23.864064" Impuesto="002" TipoFactor="Tasa" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+      <cfdi:InformacionAduanera NumeroPedimento="23  16  3879  3005246" />
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="31171700" NoIdentificacion="ENCN15" Cantidad="2.000000" ClaveUnidad="H87" Unidad="pza" Descripcion="Engrane Cadena de levas YBR-125" ValorUnitario="27.342400" Importe="54.684800" ObjetoImp="02">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado TasaOCuota="0.160000" Base="54.684800" Importe="8.749568" Impuesto="002" TipoFactor="Tasa" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+      <cfdi:InformacionAduanera NumeroPedimento="23  16  3879  3008453" />
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="31171700" NoIdentificacion="ENCN27" Cantidad="2.000000" ClaveUnidad="H87" Unidad="pza" Descripcion="Engrane Conector de Arranque Italika 125Z (Grande)" ValorUnitario="78.890000" Importe="157.780000" ObjetoImp="02">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado TasaOCuota="0.160000" Base="157.780000" Importe="25.244800" Impuesto="002" TipoFactor="Tasa" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+      <cfdi:InformacionAduanera NumeroPedimento="17  16  3879  7005375" />
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="31171700" NoIdentificacion="ENCN72" Cantidad="2.000000" ClaveUnidad="XKI" Unidad="jgo" Descripcion="Engrane de Arranque Chico y Grande XEVERUS 250 jgo." ValorUnitario="95.054400" Importe="190.108800" ObjetoImp="02">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado TasaOCuota="0.160000" Base="190.108800" Importe="30.417408" Impuesto="002" TipoFactor="Tasa" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+      <cfdi:InformacionAduanera NumeroPedimento="22  16  3879  2010545" />
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="31171901" NoIdentificacion="ENSA08" Cantidad="3.000000" ClaveUnidad="H87" Unidad="pza" Descripcion="Engrane Trasero Suzuki GS-125 SAYTO" ValorUnitario="79.331600" Importe="237.994800" ObjetoImp="02">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado TasaOCuota="0.160000" Base="237.994800" Importe="38.079168" Impuesto="002" TipoFactor="Tasa" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+      <cfdi:InformacionAduanera NumeroPedimento="23  16  3879  3010350" />
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="31171901" NoIdentificacion="ENSA36" Cantidad="5.000000" ClaveUnidad="H87" Unidad="pza" Descripcion="Engrane Delantero Italika AT-110 SAYTO" ValorUnitario="19.154400" Importe="95.772000" ObjetoImp="02">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado TasaOCuota="0.160000" Base="95.772000" Importe="15.323520" Impuesto="002" TipoFactor="Tasa" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+      <cfdi:InformacionAduanera NumeroPedimento="23  16  3879  3007812" />
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="31171901" NoIdentificacion="ENSA92" Cantidad="4.000000" ClaveUnidad="H87" Unidad="pza" Descripcion="Engrane Trasero XEVERUS 250 (50T)" ValorUnitario="120.575200" Importe="482.300800" ObjetoImp="02">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado TasaOCuota="0.160000" Base="482.300800" Importe="77.168128" Impuesto="002" TipoFactor="Tasa" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="31171901" NoIdentificacion="KTSA45" Cantidad="2.000000" ClaveUnidad="XKI" Unidad="jgo" Descripcion="Kit engranes y cadena 200-Z SAYTO" ValorUnitario="227.065200" Importe="454.130400" ObjetoImp="02">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado TasaOCuota="0.160000" Base="454.130400" Importe="72.660864" Impuesto="002" TipoFactor="Tasa" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+      <cfdi:InformacionAduanera NumeroPedimento="23  16  3879  3012049" />
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="31171901" NoIdentificacion="KTSA61" Cantidad="4.000000" ClaveUnidad="XKI" Unidad="jgo" Descripcion="Kit de Engranes y Cadena XEVERUS 250" ValorUnitario="290.839600" Importe="1163.358400" ObjetoImp="02">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado TasaOCuota="0.160000" Base="1163.358400" Importe="186.137344" Impuesto="002" TipoFactor="Tasa" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+      <cfdi:InformacionAduanera NumeroPedimento="23  16  3879  3007812" />
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="26101410" NoIdentificacion="ETCN42" Cantidad="4.000000" ClaveUnidad="H87" Unidad="pza" Descripcion="Estator DM250 (2020 - 2021 - 2022)" ValorUnitario="192.372000" Importe="769.488000" ObjetoImp="02">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado TasaOCuota="0.160000" Base="769.488000" Importe="123.118080" Impuesto="002" TipoFactor="Tasa" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+      <cfdi:InformacionAduanera NumeroPedimento="23  16  3879  3012196" />
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="40161505" NoIdentificacion="FICN48" Cantidad="5.000000" ClaveUnidad="H87" Unidad="pza" Descripcion="Esponja Filtro de Aire Italika ATV150 SPORT 2011, 2015" ValorUnitario="12.162400" Importe="60.812000" ObjetoImp="02">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado TasaOCuota="0.160000" Base="60.812000" Importe="9.729920" Impuesto="002" TipoFactor="Tasa" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+      <cfdi:InformacionAduanera NumeroPedimento="23  16  3879  3010005" />
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="40161505" NoIdentificacion="FICN95" Cantidad="4.000000" ClaveUnidad="H87" Unidad="pza" Descripcion="Filtro de Aire GIXXER 155" ValorUnitario="55.310400" Importe="221.241600" ObjetoImp="02">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado TasaOCuota="0.160000" Base="221.241600" Importe="35.398656" Impuesto="002" TipoFactor="Tasa" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+      <cfdi:InformacionAduanera NumeroPedimento="24  16  3879  4001323" />
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="25172900" NoIdentificacion="FOCN52" Cantidad="10.000000" ClaveUnidad="H87" Unidad="pza" Descripcion="Tira Decorativa Led Universal 3x10 Roja" ValorUnitario="32.614000" Importe="326.140000" ObjetoImp="02">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado TasaOCuota="0.160000" Base="326.140000" Importe="52.182400" Impuesto="002" TipoFactor="Tasa" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+      <cfdi:InformacionAduanera NumeroPedimento="23  16  3879  3005246" />
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="25172900" NoIdentificacion="FOCN54" Cantidad="10.000000" ClaveUnidad="H87" Unidad="pza" Descripcion="Tira Decorativa Led Universal 3x10 Azul" ValorUnitario="32.614000" Importe="326.140000" ObjetoImp="02">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado TasaOCuota="0.160000" Base="326.140000" Importe="52.182400" Impuesto="002" TipoFactor="Tasa" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+      <cfdi:InformacionAduanera NumeroPedimento="23  16  3879  3005246" />
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="25173900" NoIdentificacion="IDCN06" Cantidad="10.000000" ClaveUnidad="H87" Unidad="pza" Descripcion="Intermitente de Direccionales Universal luces LED" ValorUnitario="17.921600" Importe="179.216000" ObjetoImp="02">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado TasaOCuota="0.160000" Base="179.216000" Importe="28.674560" Impuesto="002" TipoFactor="Tasa" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+      <cfdi:InformacionAduanera NumeroPedimento="23  16  3879  3012944" />
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="25172400" NoIdentificacion="LVCN26" Cantidad="4.000000" ClaveUnidad="H87" Unidad="pza" Descripcion="Llave de gasolina ATV150" ValorUnitario="66.994400" Importe="267.977600" ObjetoImp="02">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado TasaOCuota="0.160000" Base="267.977600" Importe="42.876416" Impuesto="002" TipoFactor="Tasa" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+      <cfdi:InformacionAduanera NumeroPedimento="23  16  3879  3010007" />
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="01010101" NoIdentificacion="MACN126" Cantidad="5.000000" ClaveUnidad="H87" Unidad="pza" Descripcion="Manija Derecha DM250 (2020 - 2021 - 2022)" ValorUnitario="29.421600" Importe="147.108000" ObjetoImp="02">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado TasaOCuota="0.160000" Base="147.108000" Importe="23.537280" Impuesto="002" TipoFactor="Tasa" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+      <cfdi:InformacionAduanera NumeroPedimento="23  16  3879  3007836" />
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="01010101" NoIdentificacion="PECN121" Cantidad="5.000000" ClaveUnidad="H87" Unidad="pza" Descripcion="Pedal de Cambios DT150 Sport II (2017 - 2020)" ValorUnitario="34.849600" Importe="174.248000" ObjetoImp="02">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado TasaOCuota="0.160000" Base="174.248000" Importe="27.879680" Impuesto="002" TipoFactor="Tasa" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+      <cfdi:InformacionAduanera NumeroPedimento="23  16  3879  3007836" />
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="01010101" NoIdentificacion="PNCN03" Cantidad="10.000000" ClaveUnidad="H87" Unidad="pza" Descripcion="Varilla Punterías Italika 125Z" ValorUnitario="26.256800" Importe="262.568000" ObjetoImp="02">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado TasaOCuota="0.160000" Base="262.568000" Importe="42.010880" Impuesto="002" TipoFactor="Tasa" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+      <cfdi:InformacionAduanera NumeroPedimento="23  16  3879  3007836" />
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="01010101" NoIdentificacion="PNCN06" Cantidad="5.000000" ClaveUnidad="XKI" Unidad="jgo" Descripcion="Varillas de Punterias DM-200 jgo." ValorUnitario="26.100400" Importe="130.502000" ObjetoImp="02">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado TasaOCuota="0.160000" Base="130.502000" Importe="20.880320" Impuesto="002" TipoFactor="Tasa" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+      <cfdi:InformacionAduanera NumeroPedimento="23  16  3879  3007836" />
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="01010101" NoIdentificacion="PNCN07" Cantidad="4.000000" ClaveUnidad="XKI" Unidad="jgo" Descripcion="Varillas de Punterias XEVERUS 250 (153MM) jgo" ValorUnitario="29.421600" Importe="117.686400" ObjetoImp="02">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado TasaOCuota="0.160000" Base="117.686400" Importe="18.829824" Impuesto="002" TipoFactor="Tasa" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+      <cfdi:InformacionAduanera NumeroPedimento="23  16  3879  3005264" />
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="26101736" NoIdentificacion="PTCN159" Cantidad="2.000000" ClaveUnidad="XKI" Unidad="jgo" Descripcion="Pistón Completo VELOCI 300 (STD)" ValorUnitario="219.981200" Importe="439.962400" ObjetoImp="02">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado TasaOCuota="0.160000" Base="439.962400" Importe="70.393984" Impuesto="002" TipoFactor="Tasa" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+      <cfdi:InformacionAduanera NumeroPedimento="23  16  3879  3007128" />
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="26101736" NoIdentificacion="PTCN160" Cantidad="2.000000" ClaveUnidad="XKI" Unidad="jgo" Descripcion="Pistón Completo VELOCI 300 (0.25)" ValorUnitario="219.981200" Importe="439.962400" ObjetoImp="02">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado TasaOCuota="0.160000" Base="439.962400" Importe="70.393984" Impuesto="002" TipoFactor="Tasa" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="25171900" NoIdentificacion="RNCN57" Cantidad="1.000000" ClaveUnidad="H87" Unidad="pza" Descripcion="Rin Trasero Negro DT150 (1.60*17)" ValorUnitario="696.438160" Importe="696.438160" ObjetoImp="02">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado TasaOCuota="0.160000" Base="696.438160" Importe="111.430106" Impuesto="002" TipoFactor="Tasa" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+      <cfdi:InformacionAduanera NumeroPedimento="24  16  3879  4000136" />
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="31141500" NoIdentificacion="SACN74" Cantidad="3.000000" ClaveUnidad="H87" Unidad="pza" Descripcion="Salpicadera Trasera DM-200" ValorUnitario="61.014400" Importe="183.043200" ObjetoImp="02">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado TasaOCuota="0.160000" Base="183.043200" Importe="29.286912" Impuesto="002" TipoFactor="Tasa" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+      <cfdi:InformacionAduanera NumeroPedimento="23  16  3879  3012721" />
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="31141500" NoIdentificacion="SACN127" Cantidad="2.000000" ClaveUnidad="H87" Unidad="pza" Descripcion="Salpicadera Azul Celeste AT110 RT c/Led" ValorUnitario="181.056000" Importe="362.112000" ObjetoImp="02">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado TasaOCuota="0.160000" Base="362.112000" Importe="57.937920" Impuesto="002" TipoFactor="Tasa" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+      <cfdi:InformacionAduanera NumeroPedimento="23  16  3879  3011556" />
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="31141500" NoIdentificacion="TPCN159" Cantidad="2.000000" ClaveUnidad="H87" Unidad="pza" Descripcion="Cubierta Interior de Faro DM250 (2020)/ DM200 Sport" ValorUnitario="81.475200" Importe="162.950400" ObjetoImp="02">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado TasaOCuota="0.160000" Base="162.950400" Importe="26.072064" Impuesto="002" TipoFactor="Tasa" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+      <cfdi:InformacionAduanera NumeroPedimento="24  16  3879  4000114" />
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="31141500" NoIdentificacion="TPCN175" Cantidad="2.000000" ClaveUnidad="H87" Unidad="pza" Descripcion="Cubierta de Faro Rojo/Blanco FT150 GTS Roja" ValorUnitario="162.950400" Importe="325.900800" ObjetoImp="02">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado TasaOCuota="0.160000" Base="325.900800" Importe="52.144128" Impuesto="002" TipoFactor="Tasa" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+      <cfdi:InformacionAduanera NumeroPedimento="23  16  3879  3011614" />
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="31141500" NoIdentificacion="TPCN192" Cantidad="3.000000" ClaveUnidad="H87" Unidad="pza" Descripcion="Cubierta Delantera Negra de Faro FT150TS" ValorUnitario="45.264000" Importe="135.792000" ObjetoImp="02">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado TasaOCuota="0.160000" Base="135.792000" Importe="21.726720" Impuesto="002" TipoFactor="Tasa" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+      <cfdi:InformacionAduanera NumeroPedimento="23  16  3879  3011041" />
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="31141500" NoIdentificacion="TPCN196" Cantidad="1.000000" ClaveUnidad="XKI" Unidad="jgo" Descripcion="CUBIERTAS DE SUSPENSION DELANTERA ROJAS/NEGRO XEVERUS 250 PRO XR2" ValorUnitario="99.580800" Importe="99.580800" ObjetoImp="02">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado TasaOCuota="0.160000" Base="99.580800" Importe="15.932928" Impuesto="002" TipoFactor="Tasa" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+      <cfdi:InformacionAduanera NumeroPedimento="23  16  3879  3000594" />
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="31141500" NoIdentificacion="TPCN197" Cantidad="1.000000" ClaveUnidad="XKI" Unidad="jgo" Descripcion="CUBIERTAS DE TANQUE ROJAS XEVERUS 250 PRO XR2" ValorUnitario="246.523200" Importe="246.523200" ObjetoImp="02">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado TasaOCuota="0.160000" Base="246.523200" Importe="39.443712" Impuesto="002" TipoFactor="Tasa" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+      <cfdi:InformacionAduanera NumeroPedimento="24  16  3879  4000796" />
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="25174200" NoIdentificacion="TZCN12" Cantidad="6.000000" ClaveUnidad="XKI" Unidad="jgo" Descripcion="Tazas de Dirección DM-200 jgo." ValorUnitario="52.890800" Importe="317.344800" ObjetoImp="02">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado TasaOCuota="0.160000" Base="317.344800" Importe="50.775168" Impuesto="002" TipoFactor="Tasa" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+      <cfdi:InformacionAduanera NumeroPedimento="23  16  3879  3012729" />
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="26101743" NoIdentificacion="VACN28" Cantidad="4.000000" ClaveUnidad="XKI" Unidad="jgo" Descripcion="Valvulas de Admisión y Expulsión 200-Z Jgo." ValorUnitario="91.438800" Importe="365.755200" ObjetoImp="02">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado TasaOCuota="0.160000" Base="365.755200" Importe="58.520832" Impuesto="002" TipoFactor="Tasa" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+      <cfdi:InformacionAduanera NumeroPedimento="23  16  3879  3011237" />
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="26101743" NoIdentificacion="VACN34" Cantidad="10.000000" ClaveUnidad="XKI" Unidad="jgo" Descripcion="Valvulas de Admisión y Escape DM250 (2020 - 2021 - 2022)" ValorUnitario="89.626400" Importe="896.264000" ObjetoImp="02">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado TasaOCuota="0.160000" Base="896.264000" Importe="143.402240" Impuesto="002" TipoFactor="Tasa" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+      <cfdi:InformacionAduanera NumeroPedimento="23  16  3879  3011237" />
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="01010101" NoIdentificacion="ZZAH02" Cantidad="200.000000" ClaveUnidad="H87" Unidad="pza" Descripcion="Ahorcador De Cable Clutch # 2 (Carabela)0" ValorUnitario="2.318400" Importe="463.680000" ObjetoImp="02">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado TasaOCuota="0.160000" Base="463.680000" Importe="74.188800" Impuesto="002" TipoFactor="Tasa" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="25174900" NoIdentificacion="ZZGR14" Cantidad="6.000000" ClaveUnidad="XKI" Unidad="jgo" Descripcion="Goma Rueda Trasera Suzuki AX-4 (jgo) (PVC)" ValorUnitario="45.641200" Importe="273.847200" ObjetoImp="02">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado TasaOCuota="0.160000" Base="273.847200" Importe="43.815552" Impuesto="002" TipoFactor="Tasa" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+    </cfdi:Concepto>
+  </cfdi:Conceptos>
+  <cfdi:Impuestos TotalImpuestosTrasladados="5897.19">
+    <cfdi:Traslados>
+      <cfdi:Traslado Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.160000" Base="36857.44" Importe="5897.19" />
+    </cfdi:Traslados>
+  </cfdi:Impuestos>
+<cfdi:Complemento><tfd:TimbreFiscalDigital xmlns:tfd="http://www.sat.gob.mx/TimbreFiscalDigital" xsi:schemaLocation="http://www.sat.gob.mx/TimbreFiscalDigital http://www.sat.gob.mx/sitio_internet/cfd/TimbreFiscalDigital/TimbreFiscalDigitalv11.xsd" Version="1.1" UUID="552CE741-4930-40C8-8571-F3235FD16C72" FechaTimbrado="2024-02-07T17:14:11" RfcProvCertif="SFE0807172W8" SelloCFD="AGlBCfWtNT3BrK2XE+nj3/XtUhZHiCBSLp57HZcIjqj70gsOUkH+hxwFl9OyM3KXU8otfteSistUPfzwOH9XbeYHuTKtUkSlaIqzWzdX2UbV/qiHENaLPAceQ/nyO4WzMffoF7V9hw+zHIuLOpu2W8ukaUUM2hbyDhZNzYNXhbwBCGWUdMeu8Enn1+Z6Wx135I61xkskaBGt24pT7nR5a5iBjjNpvnY8pVBxuxsdlQuYqoisRk24NWixk+K3hUTo36YVrC32Rr505o6arU+wTqacvCiiQqXYJg5BS9XanArZGuU177BTz6M/w/msXkBzKjdtKfZQ75Y6iHIxHeOx2Q==" NoCertificadoSAT="00001000000505619865" SelloSAT="F8AdmRS5Lsc7FE4+raYJkRxeA9XbZ5OEjtZxtmv9pDyS+mNrss8pxe5fcmJs3qATb7CdKptoKK3CF3VTMr210n6HZok6WzHhXRXXrpKZsUOcrZf/aJivbL9V7sHXOavfcnZ11J6Szm3JoFGJRrXc5KKnF5B7TYS5sTNYm7aa3ZxSeeUtZ/Jd5u+5p6BYY5O2H6PqTj6Efp3UoNrz7NypLSUzS5RmiRENN5i7gfsPlf/QePUoegqrnTFeI3SUglP9dMZpOo3ZHipJEBCJQtjozbaoemru7pwLalpcwrEWq1EvBQlm+J1Wo9kKS+UmDJRdF2+oMd/q9juJ9paN86d6jw==" /></cfdi:Complemento></cfdi:Comprobante>
